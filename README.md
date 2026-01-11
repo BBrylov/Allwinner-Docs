@@ -1,26 +1,108 @@
-# vuepress-next
+# 📚 Allwinner-Docs — Русская документация
 
-[![github check](https://github.com/vuepress/vuepress-next/workflows/check/badge.svg)](https://github.com/vuepress/vuepress-next/actions?query=workflow%3Acheck)
-[![github docs](https://github.com/vuepress/vuepress-next/workflows/docs/badge.svg)](https://github.com/vuepress/vuepress-next/actions?query=workflow%3Adocs)
-[![npm](https://badgen.net/npm/v/vuepress/next)](https://www.npmjs.com/package/vuepress)
-[![coverage](https://coveralls.io/repos/github/vuepress/vuepress-next/badge.svg?branch=main)](https://coveralls.io/github/vuepress/vuepress-next?branch=main)
-[![license](https://badgen.net/github/license/vuepress/vuepress-next)](https://github.com/vuepress/vuepress-next/blob/main/LICENSE)
-[![discord](https://badgen.net/discord/online-members/ptFjefy6H5?icon=discord&label=discord)](https://discord.gg/ptFjefy6H5)
+> Полный перевод технической документации для SoC платформы Allwinner на русский язык
 
-## Status: Beta
+Это форк проекта [DongshanPI/Allwinner-Docs](https://github.com/DongshanPI/Allwinner-Docs) от команды [百问网 (100ask.net)](http://allwinner-docs.100ask.org) с полным переводом на русский язык.
 
-For users from VuePress v1, please check out the [migration guide](https://v2.vuepress.vuejs.org/guide/migration.html).
+## 🎯 О проекте
 
-For users who want to follow our progress or contribute to this project, please check out the [roadmap](https://github.com/vuepress/vuepress-next/discussions/68).
+Данная документация охватывает разработку под SoC чипы Allwinner и предназначена для разработчиков встраиваемых Linux-систем.
 
-## Documentation
+### Поддерживаемые платформы
 
-https://v2.vuepress.vuejs.org
+- **100ASK_T113-Pro** — RISC-V + ARM dual-core
+- **100ASK_V853-PRO** — ARM Cortex-A7 + NPU
+- **DongshanPI-D1s** — RISC-V C906
+- **D1-H 东山哪吒STU** — RISC-V development board
+- **柚木PI-Lizard (V851s)** — ARM + AI accelerator
 
-## Contribution
+## 📖 Содержание документации
 
-See [Contributing Guide](https://github.com/vuepress/vuepress-next/blob/main/docs/contributing.md).
+### 0. Основы embedded-разработки
 
-## License
+→ **[Перейти к разделу](docs/ru/Basic/README.md)**
 
-[MIT](https://github.com/vuepress/vuepress-next/blob/main/LICENSE)
+- Базовые команды Linux
+- Программирование на C
+- Работа с Makefile
+- Инструменты GNU (GCC, GDB, LD)
+- Работа с процессами и потоками
+- Введение в Shell
+
+### 1. Разработка приложений
+
+→ **[Перейти к разделу](docs/ru/Application/README.md)**
+
+- **UI-разработка**: LVGL8, графические библиотеки
+- **Мультимедиа**: MPP (Media Processing Platform), видео/аудио
+- **AI/NPU**: Разработка с использованием нейропроцессора
+- **Примеры**: Готовые примеры приложений
+- **Утилиты**: Инструменты разработчика
+
+### 2. Системная разработка
+
+→ **[Перейти к разделу](docs/ru/System/README.md)**
+
+- Архитектура Linux-систем
+- Компиляция Tina SDK
+- eLinux Framework
+- Кастомизация системы
+- OTA-обновления
+
+### 3. Разработка драйверов
+
+→ **[Перейти к разделу](docs/ru/Devicedriver/README.md)**
+
+- GPIO и периферия
+- Подсистемы ядра Linux
+- Драйверы для V853-PRO
+
+### 4. Специальные темы
+
+→ **[Перейти к разделу](docs/ru/Special/README.md)**
+
+- Разработка U-Boot
+- Buildroot для LTS-T113
+- Работа с DongshanNezha
+
+### 5. Платформы
+
+→ **[Перейти к разделу](docs/ru/Board/README.md)**
+
+- Руководства для T113-PRO
+- Руководства для V853-PRO
+- SDK guides
+
+## 🔗 Полезные ссылки
+
+- **Оригинальный репозиторий**: <https://github.com/DongshanPI/Allwinner-Docs>
+- **Оригинальная документация**: <http://allwinner-docs.100ask.org>
+- **100ask.net**: Официальный сайт проекта
+
+## 🌍 Языковые версии
+
+- 🇨🇳 **Китайский** (оригинал): `docs/`
+- 🇺🇸 **Английский**: `docs/en/`
+- 🇷🇺 **Русский** (этот форк): `docs/ru/`
+
+## 📄 Лицензия
+
+Данный проект распространяется под двойной лицензией:
+
+- **GPLV3** для программного кода
+- **CC BY 4.0** для документации
+
+При использовании материалов указывайте источник: `allwinner-docs.100ask.net`
+
+## 🙏 Благодарности
+
+- **百问网 (100ask Team)** — за оригинальную документацию
+- **DongshanPI** — за поддержку open-source сообщества
+
+## 🤝 Вклад в проект
+
+Нашли ошибку в переводе? Откройте [Issue](https://github.com/BBrylov/Allwinner-Docs/issues) или отправьте Pull Request!
+
+---
+
+**Примечание**: Этот форк фокусируется на русском переводе и не синхронизируется с upstream репозиторием. Для получения последних обновлений от оригинального проекта посетите [DongshanPI/Allwinner-Docs](https://github.com/DongshanPI/Allwinner-Docs).
